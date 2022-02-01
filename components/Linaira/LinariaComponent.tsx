@@ -5,7 +5,7 @@ const LinariaComponent = () => {
   return (
     <>
       <Linaria.Title>
-        Linaira <Linaria.Tag>zero-runtime</Linaria.Tag>
+        Linaria <Linaria.Tag>zero-runtime</Linaria.Tag>
       </Linaria.Title>
       <Linaria.Container>
         <CodeExample />
