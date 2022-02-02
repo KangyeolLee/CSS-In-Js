@@ -1,4 +1,5 @@
 import CodeExample from './CodeExample';
+import Description from './Description';
 import * as Stitches from './style';
 
 const StitchesComponent = () => {
@@ -12,7 +13,7 @@ const StitchesComponent = () => {
       </Stitches.Title>
       <Stitches.Container>
         <CodeExample />
-        <Stitches.Description>설명</Stitches.Description>
+        <Description />
       </Stitches.Container>
     </>
   );

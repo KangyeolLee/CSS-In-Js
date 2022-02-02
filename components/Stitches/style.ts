@@ -2,6 +2,7 @@ import { styled } from '@stitches/react';
 
 export const Container = styled('section', {
   display: 'flex',
+  alignItems: 'flex-start',
   marginTop: '10px',
   gap: '15px',
 });
@@ -25,6 +26,7 @@ export const CodeExample = styled('div', {
   padding: '15px',
   borderRadius: '4px',
   fontSize: '14px',
+  minWidth: '250px',
 });
 
 export const CodeKeyword = styled('span', {
@@ -47,10 +49,17 @@ export const CodeTabIndent = styled('div', {
   marginLeft: '15px',
 });
 
-export const Description = styled('div', {
+export const Description = styled('ul', {
+  fontSize: '14px',
   border: '1px solid #1a7cff',
   padding: '15px',
+  margin: 0,
   borderRadius: '4px',
+
+  '> li': {
+    marginLeft: '15px',
+    lineHeight: '25px',
+  },
 });
 
 export const Tag = styled('span', {
@@ -63,4 +72,13 @@ export const Tag = styled('span', {
   fontSize: '12px',
   color: '#000',
   marginLeft: '10px',
+});
+
+export const Quotation = styled('span', {
+  padding: '2px 4px',
+  backgroundColor: '#ededed',
+  fontSize: '13px',
+  fontStyle: 'italic',
+  fontWeight: 700,
+  borderRadius: '4px',
 });
