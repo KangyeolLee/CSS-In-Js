@@ -1,4 +1,5 @@
 import CodeExample from './CodeExample';
+import Description from './Description';
 import * as Styled from './style';
 
 const StyledComponents = () => {
@@ -12,7 +13,7 @@ const StyledComponents = () => {
       </Styled.Title>
       <Styled.Container>
         <CodeExample />
-        <Styled.Description>설명</Styled.Description>
+        <Description />
       </Styled.Container>
     </>
   );

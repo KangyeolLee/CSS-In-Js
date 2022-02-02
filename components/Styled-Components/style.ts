@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.section`
   display: flex;
+  align-items: flex-start;
   margin-top: 10px;
   gap: 15px;
 `;
@@ -25,6 +26,7 @@ export const CodeExample = styled.div`
   padding: 15px;
   border-radius: 4px;
   font-size: 14px;
+  min-width: 250px;
 `;
 
 export const CodeKeyword = styled.span`
@@ -48,10 +50,17 @@ export const CodeTabIndent = styled.div`
   margin-left: 15px;
 `;
 
-export const Description = styled.div`
+export const Description = styled.ul`
+  font-size: 14px;
   border: 1px solid #1a7cff;
   padding: 15px;
+  margin: 0;
   border-radius: 4px;
+
+  > li {
+    margin-left: 15px;
+    line-height: 25px;
+  }
 `;
 
 export const Tag = styled.span`
@@ -64,4 +73,13 @@ export const Tag = styled.span`
   font-size: 12px;
   color: #fff;
   margin-left: 10px;
+`;
+
+export const Quotation = styled.span`
+  padding: 2px 4px;
+  background-color: #ededed;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 700;
+  border-radius: 4px;
 `;
