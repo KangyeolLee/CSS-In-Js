@@ -2,10 +2,15 @@ import type { NextPage } from 'next';
 import StyledComponents from '../components/Styled-Components';
 import LinariaComponent from '../components/Linaira/LinariaComponent';
 import StitchesComponent from '../components/Stitches/StitchesComponent';
+import Script from 'next/script';
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div
+      style={{
+        maxWidth: '1080px',
+        margin: 'auto',
+      }}>
       <h1 style={{ fontSize: '30px', textAlign: 'center' }}>5st Generation: CSS-In-JS</h1>
       <div style={{ marginTop: '15px', textAlign: 'center' }}>
         5세대 (이상) Css-In-Js 방식의 라이브러리 중 <br />
@@ -19,6 +24,7 @@ const Home: NextPage = () => {
         <LinariaComponent />
         <StitchesComponent />
       </div>
+      <Script src='https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=js&skin=desert'></Script>
     </div>
   );
 };
