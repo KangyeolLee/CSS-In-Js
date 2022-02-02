@@ -1,4 +1,5 @@
 import CodeExample from './CodeExample';
+import Description from './Description';
 import * as Linaria from './style';
 
 const LinariaComponent = () => {
@@ -12,7 +13,7 @@ const LinariaComponent = () => {
       </Linaria.Title>
       <Linaria.Container>
         <CodeExample />
-        <Linaria.Description>설명</Linaria.Description>
+        <Description />
       </Linaria.Container>
     </>
   );
