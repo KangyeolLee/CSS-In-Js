@@ -5,7 +5,10 @@ const StyledComponents = () => {
   return (
     <>
       <Styled.Title>
-        styled-components <Styled.Tag>runtime</Styled.Tag>
+        <Styled.Link href='https://styled-components.com/' target='_blank'>
+          styled-components
+        </Styled.Link>
+        <Styled.Tag>runtime</Styled.Tag>
       </Styled.Title>
       <Styled.Container>
         <CodeExample />

@@ -5,7 +5,10 @@ const StitchesComponent = () => {
   return (
     <>
       <Stitches.Title>
-        Stitches <Stitches.Tag>near zero-runtime</Stitches.Tag>
+        <Stitches.Link href='https://stitches.dev/' target='_blank'>
+          Stitches
+        </Stitches.Link>
+        <Stitches.Tag>near zero-runtime</Stitches.Tag>
       </Stitches.Title>
       <Stitches.Container>
         <CodeExample />

@@ -10,6 +10,16 @@ export const Title = styled('h3', {
   margin: '2rem 0 0 0',
 });
 
+export const Link = styled('a', {
+  textDecoration: 'none',
+  color: '#000',
+
+  '&:hover': {
+    textDecoration: 'underline',
+    opacity: 0.65,
+  },
+});
+
 export const CodeExample = styled('div', {
   border: '1px solid hsl(208 11.3% 88.9%)',
   padding: '15px',
@@ -52,4 +62,5 @@ export const Tag = styled('span', {
   borderRadius: '10px',
   fontSize: '12px',
   color: '#000',
+  marginLeft: '10px',
 });

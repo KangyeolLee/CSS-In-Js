@@ -10,6 +10,16 @@ export const Title = styled.h3`
   margin: 2rem 0 0 0;
 `;
 
+export const Link = styled.a`
+  text-decoration: none;
+  color: #000;
+
+  &:hover {
+    opacity: 0.65;
+    text-decoration: underline;
+  }
+`;
+
 export const CodeExample = styled.div`
   background-color: #cf1553;
   padding: 15px;
@@ -49,4 +59,5 @@ export const Tag = styled.span`
   border-radius: 10px;
   font-size: 12px;
   color: #fff;
+  margin-left: 10px;
 `;
