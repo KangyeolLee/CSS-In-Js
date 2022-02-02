@@ -1,5 +1,7 @@
 import CodeExample from './CodeExample';
 import Description from './Description';
+import Installation from './Installation';
+import Setting from './Setting';
 import * as Styled from './style';
 
 const StyledComponents = () => {
@@ -15,6 +17,8 @@ const StyledComponents = () => {
         <CodeExample />
         <Description />
       </Styled.Container>
+      <Installation />
+      <Setting />
     </>
   );
 };

@@ -27,6 +27,10 @@ export const CodeExample = styled.div`
   border-radius: 4px;
   font-size: 14px;
   min-width: 250px;
+
+  .prettyprint {
+    background-color: rgb(29, 31, 39);
+  }
 `;
 
 export const CodeKeyword = styled.span`
@@ -46,13 +50,17 @@ export const CodeProperties = styled.span<{ isBlock?: boolean }>`
     `}
 `;
 
+export const CodeRemark = styled.span`
+  color: #0c7c49;
+`;
+
 export const CodeTabIndent = styled.div`
   margin-left: 15px;
 `;
 
 export const Description = styled.ul`
   font-size: 14px;
-  border: 1px solid #1a7cff;
+  border: 1px solid rgb(29, 31, 39);
   padding: 15px;
   margin: 0;
   border-radius: 4px;
@@ -82,4 +90,37 @@ export const Quotation = styled.span`
   font-style: italic;
   font-weight: 700;
   border-radius: 4px;
+`;
+
+export const Collapsible = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+`;
+
+export const CollapsibleHeader = styled.div`
+  padding: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid rgb(29, 31, 39);
+
+  &:hover {
+    opacity: 0.85;
+    cursor: pointer;
+  }
+`;
+
+export const CollapsibleContent = styled.div<{ open: boolean }>`
+  background-color: rgb(29, 31, 39);
+  color: #fff;
+  padding: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: none;
+
+  ${({ open }) =>
+    open &&
+    css`
+      display: block;
+    `}
 `;
