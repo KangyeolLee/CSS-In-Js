@@ -48,7 +48,7 @@ export const CodeTabIndent = styled.div`
 
 export const Description = styled.ul`
   font-size: 14px;
-  border: 1px solid #1a7cff;
+  border: 1px solid #cf1553;
   padding: 15px;
   margin: 0;
   border-radius: 4px;
@@ -78,4 +78,40 @@ export const Quotation = styled.span`
   font-style: italic;
   font-weight: 700;
   border-radius: 4px;
+`;
+
+export const Collapsible = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+`;
+
+export const CollapsibleHeader = styled.div`
+  padding: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid #cf1553;
+
+  &:hover {
+    opacity: 0.85;
+    cursor: pointer;
+  }
+`;
+
+export const CollapsibleContent = styled.div<{ open: boolean }>`
+  background-color: #cf1553;
+  color: #fff;
+  padding: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: ${({ open }) => (open ? 'block' : 'none')};
+`;
+
+export const SettingsHint = styled.li`
+  color: #222;
+  margin: -30px !important;
+  margin-bottom: 0 !important;
+  padding: 15px;
+  list-style-position: inside;
+  background-color: #fff;
 `;

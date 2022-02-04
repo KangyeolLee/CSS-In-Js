@@ -1,6 +1,9 @@
 import CodeExample from './CodeExample';
 import Description from './Description';
+import Installation from './Installation';
+import Setting from './Setting';
 import * as Linaria from './style';
+import Usage from './Usage';
 
 const LinariaComponent = () => {
   return (
@@ -15,6 +18,9 @@ const LinariaComponent = () => {
         <CodeExample />
         <Description />
       </Linaria.Container>
+      <Installation />
+      <Setting />
+      <Usage />
     </>
   );
 };
