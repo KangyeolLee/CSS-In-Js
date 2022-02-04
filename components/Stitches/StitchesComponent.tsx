@@ -1,6 +1,9 @@
+import Installation from './Installation';
+import Usage from './Usage';
 import CodeExample from './CodeExample';
 import Description from './Description';
 import * as Stitches from './style';
+import Setting from './Setting';
 
 const StitchesComponent = () => {
   return (
@@ -15,6 +18,9 @@ const StitchesComponent = () => {
         <CodeExample />
         <Description />
       </Stitches.Container>
+      <Installation />
+      <Setting />
+      <Usage />
     </>
   );
 };

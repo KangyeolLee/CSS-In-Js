@@ -17,7 +17,8 @@ const Description = () => {
         <Stitches.Quotation>zero runtime</Stitches.Quotation>을 표방하는 방식
       </li>
       <li>
-        사용방식이 <Stitches.Quotation>styled-components</Stitches.Quotation>과 비교시 살짝 상이함
+        사용방식이 <Stitches.Quotation>styled-components</Stitches.Quotation>와 비교시 형식은 살짝 상이하지만 컨셉은
+        비슷함
       </li>
     </Stitches.Description>
   );

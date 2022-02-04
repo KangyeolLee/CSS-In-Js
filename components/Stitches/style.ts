@@ -51,7 +51,7 @@ export const CodeTabIndent = styled('div', {
 
 export const Description = styled('ul', {
   fontSize: '14px',
-  border: '1px solid #1a7cff',
+  border: '1px solid hsl(208 11.3% 88.9%)',
   padding: '15px',
   margin: 0,
   borderRadius: '4px',
@@ -81,4 +81,42 @@ export const Quotation = styled('span', {
   fontStyle: 'italic',
   fontWeight: 700,
   borderRadius: '4px',
+});
+
+export const Collapsible = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  marginTop: '15px',
+});
+
+export const CollapsibleHeader = styled('div', {
+  padding: '15px',
+  borderTopRightRadius: '10px',
+  borderTopLeftRadius: '10px',
+  border: '1px solid hsl(208 11.3% 88.9%)',
+
+  '&:hover': {
+    opacity: 0.85,
+    cursor: 'pointer',
+  },
+});
+
+export const CollapsibleContent = styled('div', {
+  variants: {
+    open: { true: { display: 'block' }, false: { display: 'none' } },
+  },
+  backgroundColor: 'hsl(208 11.3% 88.9%)',
+  color: '#fff',
+  padding: '15px',
+  borderBottomLeftRadius: '10px',
+  borderBottomRightRadius: '10px',
+});
+
+export const SettingsHint = styled('li', {
+  color: '#222',
+  margin: '-30px !important',
+  marginBottom: '0 !important',
+  padding: '15px',
+  listStylePosition: 'inside',
+  backgroundColor: '#fff',
 });
