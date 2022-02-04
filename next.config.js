@@ -4,7 +4,7 @@ const withLinaria = require('next-linaria');
 
 module.exports = withLinaria({
   linaria: {
-    displayName: false,
+    displayName: true,
     evaluate: true,
   },
   reactStrictMode: true,
