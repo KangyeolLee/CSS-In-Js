@@ -3,6 +3,7 @@ import Description from './Description';
 import Installation from './Installation';
 import Setting from './Setting';
 import * as Styled from './style';
+import Usage from './Usage';
 
 const StyledComponents = () => {
   return (
@@ -19,6 +20,7 @@ const StyledComponents = () => {
       </Styled.Container>
       <Installation />
       <Setting />
+      <Usage />
     </>
   );
 };

@@ -124,3 +124,12 @@ export const CollapsibleContent = styled.div<{ open: boolean }>`
       display: block;
     `}
 `;
+
+export const SettingsHint = styled.li`
+  color: #222;
+  margin: -30px !important;
+  margin-bottom: 0 !important;
+  padding: 15px;
+  list-style-position: inside;
+  background-color: #fff;
+`;

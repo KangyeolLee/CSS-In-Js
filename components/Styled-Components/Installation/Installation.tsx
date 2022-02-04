@@ -5,9 +5,7 @@ const Installation = () => {
   const { open, handleClickOnCollapsibleHeader } = useCollapsible();
   return (
     <Styled.Collapsible>
-      <Styled.CollapsibleHeader onClick={handleClickOnCollapsibleHeader}>
-        설치방법 (Next + Typescript)
-      </Styled.CollapsibleHeader>
+      <Styled.CollapsibleHeader onClick={handleClickOnCollapsibleHeader}>설치방법</Styled.CollapsibleHeader>
       <Styled.CollapsibleContent open={open}>
         <Styled.CodeExample>
           <Styled.CodeVariable>
