@@ -27,6 +27,10 @@ export const CodeExample = styled.div`
   border-radius: 4px;
   font-size: 14px;
   min-width: 250px;
+
+  .prettyprint {
+    background-color: #cf1553;
+  }
 `;
 
 export const CodeKeyword = styled.span`
@@ -44,6 +48,10 @@ export const CodeProperties = styled.span<{ isBlock?: boolean }>`
 
 export const CodeTabIndent = styled.div`
   margin-left: 15px;
+`;
+
+export const CodeRemark = styled.span`
+  color: #52fdaf;
 `;
 
 export const Description = styled.ul`
