@@ -22,11 +22,15 @@ export const Link = styled('a', {
 });
 
 export const CodeExample = styled('div', {
-  border: '1px solid hsl(208 11.3% 88.9%)',
+  border: '1px solid #989b9d',
   padding: '15px',
   borderRadius: '4px',
   fontSize: '14px',
   minWidth: '250px',
+
+  '.prettyprint': {
+    backgroundColor: '#989b9d',
+  },
 });
 
 export const CodeKeyword = styled('span', {
@@ -49,9 +53,13 @@ export const CodeTabIndent = styled('div', {
   marginLeft: '15px',
 });
 
+export const CodeRemark = styled('span', {
+  color: '#0c7c49',
+});
+
 export const Description = styled('ul', {
   fontSize: '14px',
-  border: '1px solid hsl(208 11.3% 88.9%)',
+  border: '1px solid #989b9d',
   padding: '15px',
   margin: 0,
   borderRadius: '4px',
@@ -66,7 +74,7 @@ export const Tag = styled('span', {
   display: 'inline-flex',
   justifyContent: 'center',
   alignItems: 'center',
-  border: '1px solid hsl(208 11.3% 88.9%)',
+  border: '1px solid #989b9d',
   padding: '5px 10px',
   borderRadius: '10px',
   fontSize: '12px',
@@ -93,7 +101,7 @@ export const CollapsibleHeader = styled('div', {
   padding: '15px',
   borderTopRightRadius: '10px',
   borderTopLeftRadius: '10px',
-  border: '1px solid hsl(208 11.3% 88.9%)',
+  border: '1px solid #989b9d',
 
   '&:hover': {
     opacity: 0.85,
@@ -105,7 +113,7 @@ export const CollapsibleContent = styled('div', {
   variants: {
     open: { true: { display: 'block' }, false: { display: 'none' } },
   },
-  backgroundColor: 'hsl(208 11.3% 88.9%)',
+  backgroundColor: '#989b9d',
   color: '#fff',
   padding: '15px',
   borderBottomLeftRadius: '10px',
