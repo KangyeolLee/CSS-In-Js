@@ -25,7 +25,7 @@ const Setting = () => {
           <Stitches.SettingsHint>
             사용되는 스타일 시트를 분석하고 이를 가져와 <Stitches.Quotation>Head</Stitches.Quotation> 태그의{' '}
             <Stitches.Quotation>style</Stitches.Quotation> 태그에 이를 삽입하는 방식 (해당 스타일 태그의 id는
-            "stitches"를 권장하나 필수는 아님)
+            {'"stitches"'}를 권장하나 필수는 아님)
           </Stitches.SettingsHint>
         </Stitches.Description>
         <Stitches.CodeExample>
