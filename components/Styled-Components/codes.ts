@@ -58,3 +58,17 @@ export const babel = `
   ]
 }
 `;
+
+export const example01 = `
+// optional css return
+import styled, { css } from 'styled-components';
+
+export const CodeProperties = styled.span<{ isBlock?: boolean }>\`
+  color: rgb(245, 184, 61);
+  \${({ isBlock }) =>
+    isBlock &&
+    css\`
+      display: block;
+    \`}
+\`;
+`;
