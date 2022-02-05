@@ -5,7 +5,11 @@ const Installation = () => {
   return (
     <Stitches.Collapsible>
       <Stitches.CollapsibleHeader onClick={handleClickOnCollapsibleHeader}>설치방법</Stitches.CollapsibleHeader>
-      <Stitches.CollapsibleContent open={open}>내용...</Stitches.CollapsibleContent>
+      <Stitches.CollapsibleContent open={open}>
+        <Stitches.CodeExample>
+          <Stitches.CodeVariable>npm install @stitches/react</Stitches.CodeVariable>
+        </Stitches.CodeExample>
+      </Stitches.CollapsibleContent>
     </Stitches.Collapsible>
   );
 };
