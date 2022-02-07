@@ -90,6 +90,7 @@ export const Quotation = styled.span`
   font-style: italic;
   font-weight: 700;
   border-radius: 4px;
+  color: #222;
 `;
 
 export const Collapsible = styled.div`

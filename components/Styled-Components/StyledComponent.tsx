@@ -1,6 +1,7 @@
 import CodeExample from './CodeExample';
 import Description from './Description';
 import Installation from './Installation';
+import Notification from './Notification';
 import Setting from './Setting';
 import * as Styled from './style';
 import Usage from './Usage';
@@ -21,6 +22,7 @@ const StyledComponents = () => {
       <Installation />
       <Setting />
       <Usage />
+      <Notification />
     </>
   );
 };
