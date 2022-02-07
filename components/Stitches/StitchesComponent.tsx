@@ -4,6 +4,7 @@ import CodeExample from './CodeExample';
 import Description from './Description';
 import * as Stitches from './style';
 import Setting from './Setting';
+import Notification from './Notification';
 
 const StitchesComponent = () => {
   return (
@@ -21,6 +22,7 @@ const StitchesComponent = () => {
       <Installation />
       <Setting />
       <Usage />
+      <Notification />
     </>
   );
 };
