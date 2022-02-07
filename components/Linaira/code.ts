@@ -47,3 +47,10 @@ const BaseText = styled(({ className, variant }) => {
   return <span className={cx(className, variants[variant] ?? defaultClass)}>;
 })\`\`;
 `;
+
+export const criticalCSS = `
+  import { collect } from '@linaria/server';
+
+  const { critical, other } = collect(html, css);
+  
+`;

@@ -86,6 +86,7 @@ export const Quotation = styled.span`
   font-style: italic;
   font-weight: 700;
   border-radius: 4px;
+  color: #222;
 `;
 
 export const Collapsible = styled.div`
@@ -113,6 +114,11 @@ export const CollapsibleContent = styled.div<{ open: boolean }>`
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   display: ${({ open }) => (open ? 'block' : 'none')};
+
+  .prettyprint {
+    border: 1px solid #ededed;
+    background-color: #cf1553;
+  }
 `;
 
 export const SettingsHint = styled.li`
