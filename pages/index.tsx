@@ -12,7 +12,16 @@ const Home: NextPage = () => {
         margin: 'auto',
       }}>
       <h1 style={{ fontSize: '30px', textAlign: 'center' }}>5st Generation: CSS-In-JS</h1>
-      <div style={{ marginTop: '15px', textAlign: 'center' }}>
+      <div
+        style={{
+          marginTop: '15px',
+          textAlign: 'center',
+          border: '1px solid #ededed',
+          padding: '15px',
+          borderRadius: '10px',
+          width: 'fit-content',
+          margin: 'auto',
+        }}>
         5세대 (이상) CSS-In-Js 방식의 라이브러리 중 <br />
         runtime / zero-runtime / near zero-runtime 방식의 라이브러리를 <br />
         각각 간단하게 사용해보고 비교 분석해봅시다. <br />
