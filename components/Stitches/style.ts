@@ -31,6 +31,10 @@ export const CodeExample = styled('div', {
   '.prettyprint': {
     backgroundColor: '#989b9d',
   },
+
+  '*': {
+    fontFamily: 'sans-serif',
+  },
 });
 
 export const CodeKeyword = styled('span', {

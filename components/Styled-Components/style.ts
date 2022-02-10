@@ -28,6 +28,10 @@ export const CodeExample = styled.div`
   font-size: 14px;
   min-width: 250px;
 
+  * {
+    font-family: sans-serif;
+  }
+
   .prettyprint {
     background-color: rgb(29, 31, 39);
   }
