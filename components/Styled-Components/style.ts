@@ -108,6 +108,7 @@ export const CollapsibleHeader = styled.div`
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border: 1px solid rgb(29, 31, 39);
+  font-weight: bold;
 
   &:hover {
     opacity: 0.85;
