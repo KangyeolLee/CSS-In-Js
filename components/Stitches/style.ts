@@ -67,6 +67,7 @@ export const Description = styled('ul', {
   padding: '15px',
   margin: 0,
   borderRadius: '4px',
+  width: '100%',
 
   '> li': {
     marginLeft: '15px',
