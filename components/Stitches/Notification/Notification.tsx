@@ -20,6 +20,10 @@ const Notification = () => {
           # 때문에 style-components나 linaria에서와 달리 프로덕션 모드에서도 해당 스타일을 {'<style>'}태그 내에서 확인이
           가능하다.
         </p>
+        <p>
+          # 상기 두 라이브러리와 달리 <Stitches.Quotation>Tagged Template Literal</Stitches.Quotation>을 지원하지 않는
+          점이 눈에 띄이는데 이는 번들 사이즈를 최소화하기 위해서라고 한다
+        </p>
       </Stitches.CollapsibleContent>
     </Stitches.Collapsible>
   );
